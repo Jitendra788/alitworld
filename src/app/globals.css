@@ -239,6 +239,28 @@ body {
   );
 }
 
+/* FutureDesks-style feature cards — full-bleed image on top */
+.feature-card-fd {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card-fd:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.1);
+}
+
+.feature-card-media {
+  line-height: 0;
+  width: 100%;
+}
+
+.feature-card-media-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
 .card-hover {
   border: 1px solid var(--color-card-border);
   background: white;
@@ -293,6 +315,20 @@ body {
   }
 }
 
+@media (max-width: 1023px) {
+  .mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .mobile-center-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 639px) {
   .btn-primary,
   .btn-secondary,
@@ -301,16 +337,27 @@ body {
     width: 100%;
     max-width: 20rem;
     min-height: 2.75rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .services-classic-title {
     font-size: 1.65rem !important;
     line-height: 1.2;
+    text-align: center;
   }
 
   .services-classic-header {
     margin-bottom: 2rem;
-    padding-inline: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 0.5rem;
+    text-align: center;
+  }
+
+  .services-classic-rule {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .service-pill-classic {
@@ -318,8 +365,22 @@ body {
     padding: 0.45rem 0.5rem 0.45rem 0.45rem;
   }
 
-  .service-detail-classic .p-6 {
+  .service-detail-classic .service-detail-body {
     padding: 1.25rem;
+    text-align: center;
+  }
+
+  .service-detail-classic .service-detail-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-detail-classic .service-detail-list {
+    text-align: left;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

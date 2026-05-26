@@ -22,9 +22,9 @@ export function Hero() {
     <section className="relative min-h-[100dvh] overflow-hidden">
       <HeroBackground />
 
-      <div className="relative z-10 mx-auto flex min-h-[100dvh] max-w-7xl flex-col justify-center px-4 pb-24 pt-24 sm:px-6 sm:pb-28 sm:pt-32 lg:px-8">
-        <div className="w-full max-w-2xl animate-fade-up text-center lg:text-left">
-          <p className="mb-5 inline-flex max-w-full items-center gap-2 rounded-full border border-white/15 bg-white/8 px-3 py-1.5 text-[11px] font-semibold text-white/90 backdrop-blur-md sm:mb-6 sm:px-4 sm:py-2 sm:text-sm">
+      <div className="relative z-10 mx-auto flex min-h-[100dvh] max-w-7xl flex-col items-center justify-center px-4 pb-24 pt-24 sm:px-6 sm:pb-28 sm:pt-32 lg:items-stretch lg:px-8">
+        <div className="mx-auto w-full max-w-2xl animate-fade-up text-center lg:mx-0 lg:text-left">
+          <p className="mb-5 inline-flex max-w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-white/8 px-3 py-1.5 text-[11px] font-semibold text-white/90 backdrop-blur-md sm:mb-6 sm:px-4 sm:py-2 sm:text-sm">
             <Sparkles className="h-3.5 w-3.5 shrink-0 text-cyan sm:h-4 sm:w-4" />
             Trusted by 1.3L+ Audience
           </p>
@@ -40,7 +40,7 @@ export function Hero() {
             mobile, and enterprise technology built for businesses across India.
           </p>
 
-          <div className="mx-auto mt-8 flex w-full max-w-sm flex-col items-stretch gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:justify-center lg:mx-0 lg:justify-start">
+          <div className="mx-auto mt-8 flex w-full max-w-sm flex-col items-center gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:items-stretch sm:justify-center lg:mx-0 lg:items-stretch lg:justify-start">
             <Link href="/contact" className="btn-hero-primary w-full sm:min-w-[180px] sm:w-auto">
               Get Started
               <ArrowRight className="h-4 w-4" />
@@ -51,7 +51,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mx-auto mt-10 grid w-full max-w-3xl grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl sm:mt-14 sm:rounded-2xl lg:mx-0">
+        <div className="mx-auto mt-10 grid w-full max-w-3xl grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl sm:mt-14 sm:rounded-2xl lg:mx-0 lg:w-full">
           {stats.map((stat) => (
             <div
               key={stat.label}

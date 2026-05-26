@@ -79,12 +79,12 @@ function ServiceDetailClassic({ service }: { service: GridService }) {
   return (
     <article className="service-detail-classic">
       <div className="service-detail-accent" aria-hidden />
-      <div className="p-5 sm:p-8">
-        <div className="flex items-start gap-3 sm:items-center sm:gap-4">
+      <div className="service-detail-body p-5 sm:p-8">
+        <div className="service-detail-header flex items-start gap-3 sm:items-center sm:gap-4">
           <span className="service-detail-icon-wrap h-12 w-12 shrink-0 sm:h-14 sm:w-14">
             <Icon className="h-6 w-6 sm:h-7 sm:w-7" strokeWidth={1.75} />
           </span>
-          <div className="min-w-0">
+          <div className="min-w-0 flex-1">
             <span className="text-[10px] font-bold uppercase tracking-wider text-[#f97316] sm:text-xs">
               Service {service.number}
             </span>
@@ -94,14 +94,14 @@ function ServiceDetailClassic({ service }: { service: GridService }) {
           </div>
         </div>
 
-        <p className="mt-4 text-sm leading-relaxed text-muted sm:mt-5 sm:text-[0.95rem]">
+        <p className="mt-4 text-sm leading-relaxed text-muted sm:mt-5 sm:text-[0.95rem] lg:text-left">
           {service.description}
         </p>
 
         <div className="my-5 h-px bg-card-border sm:my-6" />
 
         <p className="text-xs font-bold uppercase tracking-wider text-brand">Key capabilities</p>
-        <ul className="mt-3 space-y-2 sm:space-y-2.5">
+        <ul className="service-detail-list mt-3 space-y-2 sm:space-y-2.5">
           {service.highlights.map((item) => (
             <li key={item} className="flex items-start gap-2.5 text-sm text-foreground sm:gap-3">
               <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#f97316]" />
@@ -112,7 +112,7 @@ function ServiceDetailClassic({ service }: { service: GridService }) {
 
         <Link
           href={`/contact?service=${encodeURIComponent(service.title)}`}
-          className="btn-primary mt-6 inline-flex w-full justify-center sm:mt-8 sm:w-auto"
+          className="btn-primary mx-auto mt-6 inline-flex w-full max-w-sm justify-center sm:mt-8 lg:mx-0 lg:w-auto"
         >
           Request a Quote
           <ArrowRight className="h-4 w-4" />
@@ -139,7 +139,7 @@ export function ServicesGrid({ showHeader = true }: ServicesGridProps) {
 
       <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[1fr_22rem] lg:gap-8 xl:grid-cols-[1fr_26rem] xl:gap-10">
         {/* Mobile: sticky detail stays visible while browsing services */}
-        <div className="sticky top-[4.75rem] z-20 -mx-1 lg:hidden">
+        <div className="sticky top-[4.75rem] z-20 w-full lg:hidden">
           <ServiceDetailClassic service={active} />
         </div>
 

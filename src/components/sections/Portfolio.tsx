@@ -35,14 +35,14 @@ export function Portfolio() {
                   <ArrowUpRight className="h-5 w-5" />
                 </a>
               </div>
-              <div className="p-6">
+              <div className="p-6 text-center sm:text-left">
                 <h3 className="text-lg font-bold text-brand">{project.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{project.description}</p>
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:underline"
+                  className="mt-4 inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-[#f97316] hover:underline sm:justify-start"
                 >
                   Visit site
                   <ExternalLink className="h-3.5 w-3.5" />
@@ -52,7 +52,7 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-10 flex w-full max-w-sm flex-col items-stretch gap-3 sm:mt-12 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
+        <div className="mx-auto mt-10 flex w-full max-w-sm flex-col items-center gap-3 sm:mt-12 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
           <Link href="/customized" className="btn-primary w-full sm:w-auto">
             View All Projects
           </Link>

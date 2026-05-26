@@ -57,7 +57,7 @@ export default function ContactPage() {
       <section className="section section-mesh -mt-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-            <div className="order-2 lg:order-1">
+            <div className="order-2 text-center lg:order-1 lg:text-left">
               <h2 className="text-2xl font-bold text-brand sm:text-3xl">Get in touch</h2>
               <p className="mt-3 leading-relaxed text-muted">
                 Reach out by phone, email, or the form — we typically respond within one
@@ -96,12 +96,12 @@ export default function ContactPage() {
                 <p className="text-sm font-bold uppercase tracking-wider text-muted">
                   Follow us
                 </p>
-                <SocialLinks className="mt-4" />
+                <SocialLinks className="mt-4 justify-center lg:justify-start" />
                 <a
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary mt-5 inline-flex"
+                  className="btn-primary mx-auto mt-5 inline-flex lg:mx-0"
                 >
                   <MessageCircle className="h-4 w-4" />
                   Chat on WhatsApp

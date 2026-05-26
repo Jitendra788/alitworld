@@ -50,7 +50,7 @@ export function PageCta({
             <p className="mx-auto mt-3 max-w-lg text-sm text-white/80 sm:mt-4 sm:text-base">
               {description}
             </p>
-            <div className="mx-auto mt-7 flex w-full max-w-sm flex-col items-stretch gap-3 sm:mt-9 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
+            <div className="mx-auto mt-7 flex w-full max-w-sm flex-col items-center gap-3 sm:mt-9 sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
               <Link
                 href={primaryHref}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-brand shadow-xl transition-transform hover:scale-105 sm:w-auto sm:px-8"

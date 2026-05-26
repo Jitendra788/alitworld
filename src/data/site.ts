@@ -11,14 +11,14 @@ export const features = [
     title: "Custom Development",
     description:
       "Food delivery, e-commerce, and business apps built from scratch — tailored UX, payments, and integrations for your brand.",
-    image: "/features/custom-development.png",
+    image: "/features/features1.png",
     href: "/customized",
   },
   {
     title: "SaaS Prebuilt @ 50,000 /-",
     description:
       "Multivendor grocery, storefront, and dashboard solutions with app + web + admin panel — launch in weeks, not months.",
-    image: "/features/saas-prebuilt.png",
+    image: "/features/features2.png",
     href: "/prebuilt",
   },
 ] as const;

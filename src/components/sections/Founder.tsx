@@ -43,7 +43,7 @@ export function Founder() {
               <p className="mt-1 text-sm font-semibold text-accent">
                 {founder.title}
               </p>
-              <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
+              <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted lg:mx-0">
                 Leading Alitworld Technologies with a vision to deliver
                 scalable digital products — from custom software to
                 ready-to-launch SaaS for growing businesses.
@@ -52,7 +52,7 @@ export function Founder() {
                 href={founder.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#0A66C2] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:shadow-lg"
+                className="mx-auto mt-7 inline-flex items-center gap-2 rounded-full bg-[#0A66C2] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all hover:shadow-lg lg:mx-0"
               >
                 <Linkedin className="h-4 w-4" />
                 Connect on LinkedIn
