@@ -1,22 +1,11 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  CheckCircle2,
-  Clock,
-  Code2,
-  Layers,
-  Rocket,
-  Shield,
-} from "lucide-react";
+import { ArrowRight, Clock, Code2, Rocket, Shield } from "lucide-react";
 import { PageCta } from "@/components/PageCta";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { FAQ } from "@/components/sections/FAQ";
-import {
-  prebuiltBenefits,
-  prebuiltPageContent,
-  prebuiltProducts,
-} from "@/data/prebuilt";
+import { PrebuiltShowcase } from "@/components/sections/PrebuiltShowcase";
+import { prebuiltBenefits, prebuiltPageContent } from "@/data/prebuilt";
 
 const benefitIcons = [Rocket, Clock, Code2, Shield] as const;
 
@@ -48,14 +37,19 @@ export function PrebuiltContent() {
         </div>
       </PageHero>
 
-      <section className="section pt-8 section-mesh sm:pt-12">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="card-hover overflow-hidden p-4 sm:p-6">
-            <img
-              src="/features/saas-prebuilt.png"
-              alt="Multivendor Grocery Solution — App, Web and Panel"
-              className="w-full rounded-2xl object-contain"
-            />
+      <section className="section relative z-10 section-mesh">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            label="SaaS"
+            title={
+              <>
+                Check our <span className="gradient-text">SaaS Products</span>
+              </>
+            }
+            description="Production-ready grocery, restaurant, and delivery platforms — launch in weeks, not months."
+          />
+          <div className="mt-14 sm:mt-16">
+            <PrebuiltShowcase />
           </div>
         </div>
       </section>
@@ -84,60 +78,6 @@ export function PrebuiltContent() {
                 </article>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-mesh">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            label="SaaS"
-            title={
-              <>
-                Check our <span className="gradient-text">SaaS Products</span>
-              </>
-            }
-            description="Ready-to-launch solutions for grocery, e-commerce, delivery, and business dashboards."
-          />
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {prebuiltProducts.map((product) => (
-              <article key={product.id} className="card-hover group overflow-hidden">
-                {"image" in product && product.image ? (
-                  <div className="overflow-hidden bg-[#f0f4f0] p-4 sm:p-5">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full rounded-xl object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex h-32 items-center justify-center bg-gradient-to-br from-brand-muted to-accent-muted sm:h-36">
-                    <Layers className="h-12 w-12 text-brand/40" />
-                  </div>
-                )}
-                <div className="p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-wider text-accent">
-                    {product.tagline}
-                  </span>
-                  <h3 className="mt-2 text-xl font-bold text-brand">{product.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
-                    {product.description}
-                  </p>
-                  <ul className="mt-4 flex flex-wrap gap-2">
-                    {product.includes.map((item) => (
-                      <li
-                        key={item}
-                        className="inline-flex items-center gap-1.5 rounded-full bg-surface px-3 py-1 text-xs font-medium text-muted"
-                      >
-                        <CheckCircle2 className="h-3.5 w-3.5 text-accent" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </article>
-            ))}
           </div>
         </div>
       </section>

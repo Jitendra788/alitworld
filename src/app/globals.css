@@ -261,6 +261,47 @@ body {
   border-radius: 1rem;
 }
 
+/* FutureDesks /prebuilt — alternating product showcases */
+.prebuilt-showcase-visual {
+  position: relative;
+  z-index: 1;
+}
+
+.prebuilt-showcase-visual img {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+}
+
+.prebuilt-showcase-content {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-prebuilt-check {
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 9999px;
+  background: #0f172a;
+  padding: 0.875rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff !important;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-prebuilt-check:hover {
+  transform: translateY(-2px);
+  background: #1e293b;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.2);
+}
+
 .card-hover {
   border: 1px solid var(--color-card-border);
   background: white;
