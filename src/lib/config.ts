@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Alitworld Technologies",
   shortName: "Alitworld",
-  email: "contact@alitworld.com",
+  email: "alitworld24@gmail.com",
   phone: "+91-8949884267",
   whatsappNumber: "+918949884267",
   whatsappMessage:
