@@ -44,9 +44,9 @@ export function Founder() {
                 {founder.title}
               </p>
               <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted lg:mx-0">
-                Leading Alitworld Technologies with a vision to deliver
-                scalable digital products — from custom software to
-                ready-to-launch SaaS for growing businesses.
+                Leading Alitworld Technologies (alitworld.com) with a focus on
+                web development, website designing, mobile apps, digital
+                marketing, and SEO — helping businesses build and rank online.
               </p>
               <Link
                 href={founder.linkedin}

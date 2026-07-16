@@ -20,9 +20,9 @@ export const viewport = {
 };
 
 const homeMeta = createPageMetadata({
-  title: "Alitworld Technologies | Website, App, Marketing & SEO Company in Jaipur",
+  title: "Alitworld | Web Development, Digital Marketing & SEO Company",
   description:
-    "Alitworld Technologies — IT company in Jaipur for website designing, mobile app development, custom & prebuilt software, digital marketing, and SEO ranking. Search Alitworld to find us.",
+    "Alitworld.com — web development, website designing, app development, digital marketing and SEO services. IT company in Jaipur helping brands build, rank, and grow online.",
   path: "/",
   keywords: defaultKeywords,
 });
