@@ -13,13 +13,31 @@ import {
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   return (
-    <img
-      src={src}
-      alt={alt}
-      className="h-full w-full object-contain"
-      loading="lazy"
-      decoding="async"
-    />
+    <div className="relative h-full w-full">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt}
+        className={`h-full w-full ${
+          src.startsWith("/projects/") ? "object-contain" : "object-cover"
+        }`}
+        loading="lazy"
+        decoding="async"
+      />
+      <div className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 shadow-md ring-1 ring-black/10">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo.png"
+          alt="Alitworld"
+          width={18}
+          height={18}
+          className="h-[18px] w-[18px] rounded-full object-contain"
+        />
+        <span className="text-[10px] font-bold tracking-[0.12em] text-brand">
+          ALITWORLD
+        </span>
+      </div>
+    </div>
   );
 }
 

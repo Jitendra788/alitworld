@@ -5,12 +5,14 @@ import { PageHero } from "@/components/PageHero";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { PageCta } from "@/components/PageCta";
 import { servicesPageContent } from "@/data/services";
-import { siteConfig } from "@/lib/config";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `Our Services | ${siteConfig.name}`,
-  description: servicesPageContent.description,
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Services | Website, App, Marketing & SEO — Alitworld",
+  description:
+    "Alitworld services: website designing, mobile app development, custom software, SaaS prebuilt, digital marketing, and SEO ranking in Jaipur.",
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (

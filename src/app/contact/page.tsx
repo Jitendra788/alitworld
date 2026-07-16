@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import { ContactForm } from "@/components/ContactForm";
 import { PageHero } from "@/components/PageHero";
@@ -8,7 +9,15 @@ import {
   getWhatsAppUrl,
   siteConfig,
 } from "@/lib/config";
+import { createPageMetadata } from "@/lib/seo";
 import { Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact Alitworld Technologies | Jaipur IT Company",
+  description:
+    "Contact Alitworld Technologies in Jaipur for website designing, app development, digital marketing, and SEO. Call, WhatsApp, or send a message.",
+  path: "/contact",
+});
 
 const connectItems = [
   {

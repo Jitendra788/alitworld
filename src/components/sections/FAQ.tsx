@@ -14,7 +14,7 @@ export function FAQ() {
         <ServicesClassicHeader
           label="FAQ"
           title="Frequently Asked Questions"
-          subtitle="Everything you need to know about working with Alitworld Technologies."
+          subtitle="Clear answers about our websites, apps, IT services, marketing, and SEO — so you know exactly how Alitworld works."
         />
 
         <div className="mt-8 space-y-3 sm:mt-12 md:mt-14">

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { PrebuiltContent } from "@/components/sections/PrebuiltContent";
-import { siteConfig } from "@/lib/config";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `Prebuilt SaaS | ${siteConfig.name}`,
+export const metadata: Metadata = createPageMetadata({
+  title: "Prebuilt SaaS Apps | Alitworld Technologies",
   description:
-    "Production-ready SaaS templates starting @ ₹50,000. Multivendor grocery, e-commerce, delivery apps and more.",
-};
+    "Alitworld prebuilt SaaS from ₹50,000 — multivendor grocery, ecommerce, food delivery apps with web + admin. Launch faster with Alitworld.",
+  path: "/prebuilt",
+});
 
 export default function PrebuiltPage() {
   return <PrebuiltContent />;

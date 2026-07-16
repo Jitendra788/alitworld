@@ -36,8 +36,9 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-base sm:leading-relaxed lg:text-lg lg:mx-0">
-            Custom development and production-ready SaaS solutions — web,
-            mobile, and enterprise technology built for businesses across India.
+            Alitworld Technologies builds websites, mobile apps, and SaaS
+            products — plus digital marketing and SEO — for businesses across
+            India.
           </p>
 
           <div className="mx-auto mt-8 flex w-full max-w-sm flex-col items-center gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:items-stretch sm:justify-center lg:mx-0 lg:items-stretch lg:justify-start">

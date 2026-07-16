@@ -1,6 +1,8 @@
 export const siteConfig = {
   name: "Alitworld Technologies",
   shortName: "Alitworld",
+  /** Canonical production URL (no trailing slash) */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://alitworld.com",
   email: "alitworld24@gmail.com",
   phone: "+91-8949884267",
   whatsappNumber: "+918949884267",

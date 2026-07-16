@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { AboutContent } from "@/components/sections/AboutContent";
 import { Founder } from "@/components/sections/Founder";
-import { siteConfig } from "@/lib/config";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `About | ${siteConfig.name}`,
-  description: `Learn about ${siteConfig.name} — vision, mission, services, and our team in Jaipur, Rajasthan.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "About Alitworld Technologies | IT Company in Jaipur",
+  description:
+    "About Alitworld Technologies — Jaipur IT company for website designing, app development, digital marketing, and SEO. Meet our founder and team.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

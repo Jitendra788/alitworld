@@ -3,6 +3,7 @@ export const navLinks = [
   { label: "Prebuilt", href: "/prebuilt" },
   { label: "Customized", href: "/customized" },
   { label: "About Us", href: "/about" },
+  { label: "Blog", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },
 ] as const;
 
@@ -24,7 +25,22 @@ export const features = [
 ] as const;
 
 function portfolioImage(slug: string) {
-  return `https://picsum.photos/seed/alitworld-${slug}/800/500`;
+  // Themed covers matched to each project (not random stock)
+  const images: Record<string, string> = {
+    "lal-sweets":
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&h=560&q=80",
+    kirtilals:
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&h=560&q=80",
+    tradescribe:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&h=560&q=80",
+    murzban:
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&h=560&q=80",
+    greenfeels:
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&h=560&q=80",
+    momentz:
+      "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&h=560&q=80",
+  };
+  return images[slug] ?? `https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&h=560&q=80`;
 }
 
 export const portfolio = [
@@ -145,31 +161,54 @@ export const team = [
 
 export const faqs = [
   {
-    question:
-      "How long does it take to deliver a pre-built application or website?",
+    question: "What services does Alitworld Technologies provide?",
     answer:
-      "Most pre-built solutions ship within 2–4 weeks depending on customization scope. We share a clear timeline during the discovery call.",
+      "Alitworld is a full-service IT company. We design and develop websites, build Android & iOS apps, deliver prebuilt and custom software, and help brands grow with digital marketing and SEO ranking. From idea to go-live — and after — we stay with you as a tech partner.",
   },
   {
-    question: "Do you provide the complete source code after development?",
+    question: "Do you design and develop websites?",
     answer:
-      "Yes. Upon project completion and final payment, you receive full source code, documentation, and deployment credentials.",
+      "Yes. We design business websites, company sites, portfolios, and ecommerce storefronts that look premium and convert visitors into leads. Every site is mobile-first, fast, SEO-friendly, and includes clear contact options (form, call, WhatsApp).",
   },
   {
-    question:
-      "What's the difference between a pre-built and a custom development project?",
+    question: "Do you also build mobile apps?",
     answer:
-      "Pre-built projects use proven templates for faster, budget-friendly launches. Custom development is built from scratch for unique workflows and branding.",
+      "Yes. We build Android and iOS apps — often with Flutter so both platforms ship from one codebase. Typical projects include food delivery, ecommerce, booking, vendor apps, and admin panels. You can start with a prebuilt product or a fully custom app.",
   },
   {
-    question: "Do you provide maintenance and support after delivery?",
+    question: "What is the difference between prebuilt and custom development?",
     answer:
-      "We offer optional maintenance plans covering updates, bug fixes, hosting support, and feature enhancements.",
+      "Prebuilt solutions use proven templates (app + web + admin) for faster, fixed-budget launches — ideal when your business model is standard. Custom development is built from scratch for unique workflows, branding, and integrations. We recommend the right path after a short discovery call.",
   },
   {
-    question: "What technologies do you use for development?",
+    question: "How long does a website or app project take?",
     answer:
-      "Next.js, React, Node.js, Flutter, PostgreSQL, MongoDB, AWS, and modern design tools like Figma — chosen per project needs.",
+      "Most prebuilt websites/apps ship in about 2–4 weeks depending on customization. Custom projects take longer based on scope. Digital marketing and SEO run as ongoing plans — we share clear timelines and milestones before work starts.",
+  },
+  {
+    question: "Do you provide SEO and digital marketing?",
+    answer:
+      "Yes. Alongside websites and apps, we help with SEO ranking (so customers find you on Google), local SEO, content, and digital marketing campaigns. Product + marketing work best together — a fast site with weak visibility still loses leads.",
+  },
+  {
+    question: "How long does SEO take to show results?",
+    answer:
+      "SEO is a long-term channel. Many businesses see meaningful organic improvement in about 3–6 months, depending on competition, content quality, and technical health of the site. Paid ads can bring leads faster while SEO builds lasting traffic.",
+  },
+  {
+    question: "Do we get the complete source code after delivery?",
+    answer:
+      "Yes. After project completion and final payment, you receive full source code, documentation, and deployment credentials. The product stays yours — not locked to our team.",
+  },
+  {
+    question: "Do you offer support and maintenance after launch?",
+    answer:
+      "Yes. We offer optional maintenance plans for updates, bug fixes, hosting support, small feature changes, and help keeping your website or app secure and up to date.",
+  },
+  {
+    question: "How do we start a project with Alitworld?",
+    answer:
+      "Share your idea on the Contact page or call/WhatsApp us. We schedule a discovery call, understand website/app/marketing goals, recommend prebuilt or custom, and share a clear quote and timeline — no pressure, just a practical plan.",
   },
 ] as const;
 

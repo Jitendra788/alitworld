@@ -10,9 +10,32 @@ export type Project = {
   ctaLabel?: string;
 };
 
-/** Reliable placeholder images (unique per project) */
+/** Project-related cover images (matched to niche) */
 function projectImage(id: string) {
-  return `https://picsum.photos/seed/alitworld-${id}/1200/800`;
+  const images: Record<string, string> = {
+    "lal-sweets":
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&h=800&q=80",
+    kirtilals:
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&h=800&q=80",
+    tradescribe:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&h=800&q=80",
+    murzban:
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&h=800&q=80",
+    greenfeels:
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&h=800&q=80",
+    momentz:
+      "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=1200&h=800&q=80",
+    street9:
+      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&h=800&q=80",
+    plutoze:
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=1200&h=800&q=80",
+    "farm-fresh":
+      "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&h=800&q=80",
+  };
+  return (
+    images[id] ??
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=800&q=80"
+  );
 }
 
 export const websiteProjects: Project[] = [

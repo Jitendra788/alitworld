@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { ServicesClassicHeader } from "@/components/sections/ServicesClassicHeader";
 import { portfolio } from "@/data/site";
+import { siteConfig } from "@/lib/config";
 
 export function Portfolio() {
   return (
@@ -15,29 +17,65 @@ export function Portfolio() {
 
         <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {portfolio.map((project) => (
-            <article key={project.title} className="card-hover group overflow-hidden bg-white">
-              <div className="relative aspect-[16/10] overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+            <article
+              key={project.title}
+              className="card-hover group overflow-hidden bg-white"
+            >
+              <div className="relative aspect-[16/10] overflow-hidden bg-brand/5">
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand/70 to-transparent opacity-70" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand/75 via-brand/20 to-transparent" />
+
+                {/* Alitworld logo on project image */}
+                <div className="absolute left-3 top-3 z-10 inline-flex items-center gap-1.5 rounded-full bg-white px-2.5 py-1 shadow-md ring-1 ring-black/10">
+                  <Image
+                    src="/logo.png"
+                    alt={siteConfig.name}
+                    width={20}
+                    height={20}
+                    className="h-5 w-5 rounded-full object-contain"
+                    unoptimized
+                  />
+                  <span className="text-[10px] font-bold tracking-[0.12em] text-brand">
+                    ALITWORLD
+                  </span>
+                </div>
+
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-brand shadow-lg transition-transform group-hover:scale-105"
+                  className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-brand shadow-lg transition-transform group-hover:scale-105"
                   aria-label={`Visit ${project.title}`}
                 >
                   <ArrowUpRight className="h-5 w-5" />
                 </a>
+
+                <div className="absolute inset-x-0 bottom-0 z-10 flex items-center gap-2 bg-brand/90 px-3 py-2">
+                  <Image
+                    src="/logo.png"
+                    alt=""
+                    width={18}
+                    height={18}
+                    className="h-[18px] w-[18px] rounded-full bg-white object-contain p-0.5"
+                    unoptimized
+                    aria-hidden
+                  />
+                  <span className="truncate text-xs font-semibold text-white">
+                    Built by {siteConfig.shortName}
+                  </span>
+                </div>
               </div>
               <div className="p-6 text-center sm:text-left">
                 <h3 className="text-lg font-bold text-brand">{project.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{project.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {project.description}
+                </p>
                 <a
                   href={project.url}
                   target="_blank"
