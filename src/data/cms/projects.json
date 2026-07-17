@@ -1,0 +1,51 @@
+[
+  {
+    "id": "lal-sweets",
+    "title": "Lal Sweets Ecom Website",
+    "description": "Modern sweets store with responsive design for smooth shopping.",
+    "url": "https://www.lalsweets.com/",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&h=560&q=80"
+  },
+  {
+    "id": "kirtilals",
+    "title": "Kirtilals : Luxury Website",
+    "description": "Premium diamond-jewellery store with elegant UX for luxury buyers.",
+    "url": "https://www.kirtilals.com/",
+    "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&h=560&q=80"
+  },
+  {
+    "id": "tradescribe",
+    "title": "Tradescribe: Trading Platform",
+    "description": "Built a sleek journaling platform for tracking trades with AI-backed analytics.",
+    "url": "https://tradescribe.in/",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&h=560&q=80"
+  },
+  {
+    "id": "murzban",
+    "title": "Murzban: Clothing Luxury",
+    "description": "Modern online store for curated men's & women's designer fashion.",
+    "url": "https://murzban.in/",
+    "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&h=560&q=80"
+  },
+  {
+    "id": "greenfeels",
+    "title": "Greenfeels: Sustainable Ecom",
+    "description": "Curated eco-friendly essentials in a clean responsive design for conscious shoppers.",
+    "url": "https://greenfeels.in/",
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&h=560&q=80"
+  },
+  {
+    "id": "momentz",
+    "title": "Momentz",
+    "description": "Curated luxury gifts and premium home décor in a sleek online storefront.",
+    "url": "https://momentz.in/",
+    "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&h=560&q=80"
+  },
+  {
+    "id": "selenium-scraper",
+    "title": "Selenium Web Scraping Automation",
+    "description": "Cricket Data & 200+ Ecommerce Sites — Python + Selenium bots for match/stats scraping and product, price & stock data from 200+ online stores, with CSV/Excel export.",
+    "url": "/blogs/selenium-web-scraping-cricket-ecommerce",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&h=560&q=80"
+  }
+]

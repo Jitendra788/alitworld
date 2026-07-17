@@ -8,9 +8,9 @@ import { servicesPageContent } from "@/data/services";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Services | Website, App, Marketing & SEO — Alitworld",
+  title: "Web Development, Apps & SEO Services for Startups | Alitworld",
   description:
-    "Alitworld services: website designing, mobile app development, custom software, SaaS prebuilt, digital marketing, and SEO ranking in Jaipur.",
+    "Startup-ready services from Alitworld: website designing, mobile app development, SaaS prebuilt, digital marketing, and SEO ranking — get found and get enquiries.",
   path: "/services",
 });
 
@@ -21,7 +21,8 @@ export default function ServicesPage() {
         label="Services"
         title={
           <>
-            Our <span className="hero-gradient-text">Services</span>
+            Website, App, Marketing &amp;{" "}
+            <span className="hero-gradient-text">SEO Services</span>
           </>
         }
         description={servicesPageContent.description}

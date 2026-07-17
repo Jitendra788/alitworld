@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev:webpack": "next dev",
     "dev:clean": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\" && next dev --turbopack",
     "build": "next build",
     "postbuild": "node scripts/postbuild-standalone.mjs",

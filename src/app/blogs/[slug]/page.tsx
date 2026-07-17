@@ -4,7 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { PageCta } from "@/components/PageCta";
-import { blogPosts, getBlogPost } from "@/data/blogs";
+import { getBlogPosts, getBlogPost } from "@/data/blogs";
 import { siteConfig } from "@/lib/config";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -13,7 +13,7 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
+  return getBlogPosts().map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -5,17 +5,21 @@ import { Services } from "@/components/sections/Services";
 import { Founder } from "@/components/sections/Founder";
 import { FAQ } from "@/components/sections/FAQ";
 import { CtaBanner } from "@/components/sections/CtaBanner";
+import { getFaqs, getPortfolio } from "@/data/cms-loaders";
 
 export default function HomePage() {
+  const portfolio = getPortfolio();
+  const faqs = getFaqs();
+
   return (
     <>
       <Hero />
       <Features />
-      <Portfolio />
+      <Portfolio projects={portfolio} />
       <Services />
       <Founder />
+      <FAQ items={faqs} />
       <CtaBanner />
-      <FAQ />
     </>
   );
 }

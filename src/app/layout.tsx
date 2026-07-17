@@ -20,9 +20,9 @@ export const viewport = {
 };
 
 const homeMeta = createPageMetadata({
-  title: "Alitworld Technologies | Web Development, Marketing & SEO",
+  title: "Website, App & Digital Marketing for Startups | Alitworld",
   description:
-    "Alitworld Technologies (alitworld.com) provides web development, website designing, app development, digital marketing and SEO services in Jaipur — build your brand and rank on Google.",
+    "Build. Launch. Rank. Alitworld Technologies builds websites and mobile apps for startups, then grows them with digital marketing and SEO — enquiries, ranking, and launch support across India (Jaipur).",
   path: "/",
   keywords: defaultKeywords,
 });

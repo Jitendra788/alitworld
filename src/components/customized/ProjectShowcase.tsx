@@ -72,8 +72,9 @@ function ProjectRow({ project, reverse }: { project: Project; reverse: boolean }
       </ul>
       <Link
         href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
+        {...(/^https?:\/\//i.test(project.url)
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : {})}
         className="btn-primary mt-8 w-fit"
       >
         {cta}

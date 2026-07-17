@@ -6,8 +6,8 @@ type ServicesClassicHeaderProps = {
 
 export function ServicesClassicHeader({
   label = "What We Offer",
-  title = "Our Services",
-  subtitle = "Select a service to view complete details and capabilities.",
+  title = "IT, Website, App & Digital Marketing Services",
+  subtitle = "Select a service to view complete details — web development, apps, marketing, and SEO.",
 }: ServicesClassicHeaderProps) {
   return (
     <div className="services-classic-header mx-auto mb-8 max-w-2xl px-1 text-center sm:mb-12 md:mb-14">

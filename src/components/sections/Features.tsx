@@ -8,8 +8,8 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ServicesClassicHeader
           label="Solutions"
-          title="What We Build"
-          subtitle="Choose custom development for unique products, or launch faster with our prebuilt SaaS platforms."
+          title="Web Development & SaaS Solutions"
+          subtitle="Custom websites and apps, or launch faster with Alitworld prebuilt SaaS — plus marketing and SEO support."
         />
 
         <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:mt-14 sm:gap-8 md:grid-cols-2">

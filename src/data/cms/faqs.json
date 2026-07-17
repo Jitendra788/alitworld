@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What services does Alitworld Technologies provide?",
+    "answer": "Alitworld is a full-service IT company. We design and develop websites, build Android & iOS apps, deliver prebuilt and custom software, and help brands grow with digital marketing and SEO ranking. From idea to go-live — and after — we stay with you as a tech partner."
+  },
+  {
+    "question": "Do you design and develop websites?",
+    "answer": "Yes. We design business websites, company sites, portfolios, and ecommerce storefronts that look premium and convert visitors into leads. Every site is mobile-first, fast, SEO-friendly, and includes clear contact options (form, call, WhatsApp)."
+  },
+  {
+    "question": "Do you also build mobile apps?",
+    "answer": "Yes. We build Android and iOS apps — often with Flutter so both platforms ship from one codebase. Typical projects include food delivery, ecommerce, booking, vendor apps, and admin panels. You can start with a prebuilt product or a fully custom app."
+  },
+  {
+    "question": "What is the difference between prebuilt and custom development?",
+    "answer": "Prebuilt solutions use proven templates (app + web + admin) for faster, fixed-budget launches — ideal when your business model is standard. Custom development is built from scratch for unique workflows, branding, and integrations. We recommend the right path after a short discovery call."
+  },
+  {
+    "question": "How long does a website or app project take?",
+    "answer": "Most prebuilt websites/apps ship in about 2–4 weeks depending on customization. Custom projects take longer based on scope. Digital marketing and SEO run as ongoing plans — we share clear timelines and milestones before work starts."
+  },
+  {
+    "question": "Do you provide SEO and digital marketing?",
+    "answer": "Yes. Alongside websites and apps, we help with SEO ranking (so customers find you on Google), local SEO, content, and digital marketing campaigns. Product + marketing work best together — a fast site with weak visibility still loses leads."
+  },
+  {
+    "question": "How long does SEO take to show results?",
+    "answer": "SEO is a long-term channel. Many businesses see meaningful organic improvement in about 3–6 months, depending on competition, content quality, and technical health of the site. Paid ads can bring leads faster while SEO builds lasting traffic."
+  },
+  {
+    "question": "Do we get the complete source code after delivery?",
+    "answer": "Yes. After project completion and final payment, you receive full source code, documentation, and deployment credentials. The product stays yours — not locked to our team."
+  },
+  {
+    "question": "Do you offer support and maintenance after launch?",
+    "answer": "Yes. We offer optional maintenance plans for updates, bug fixes, hosting support, small feature changes, and help keeping your website or app secure and up to date."
+  },
+  {
+    "question": "How do we start a project with Alitworld?",
+    "answer": "Share your idea on the Contact page or call/WhatsApp us. We schedule a discovery call, understand website/app/marketing goals, recommend prebuilt or custom, and share a clear quote and timeline — no pressure, just a practical plan."
+  }
+]

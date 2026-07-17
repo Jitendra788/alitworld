@@ -40,7 +40,8 @@ export function AboutContent() {
         label="About Us"
         title={
           <>
-            About <span className="hero-gradient-text">{siteConfig.shortName}</span>
+            About Alitworld —{" "}
+            <span className="hero-gradient-text">IT Company in Jaipur</span>
           </>
         }
         description={content.tagline}

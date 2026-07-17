@@ -1,4 +1,4 @@
-import { blogPosts } from "@/data/blogs";
+import { getBlogPosts } from "@/data/blogs";
 import { siteUrl } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -6,6 +6,7 @@ export const dynamic = "force-static";
 /** Explicit XML sitemap for Google Search Console (text/xml). */
 export async function GET() {
   const today = new Date().toISOString().slice(0, 10);
+  const blogPosts = getBlogPosts();
 
   const urls: { loc: string; lastmod: string; changefreq: string; priority: string }[] = [
     { loc: `${siteUrl}/`, lastmod: today, changefreq: "weekly", priority: "1.0" },

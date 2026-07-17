@@ -3,16 +3,19 @@ import { CustomizedHero } from "@/components/customized/CustomizedHero";
 import { ProjectShowcase } from "@/components/customized/ProjectShowcase";
 import { PageCta } from "@/components/PageCta";
 import { FAQ } from "@/components/sections/FAQ";
+import { getFaqs } from "@/data/cms-loaders";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Custom App & Website Development | Alitworld",
+  title: "Custom Website & App Development for Startups | Alitworld",
   description:
-    "Custom website and mobile app development by Alitworld Technologies — tailored UX, payments, and integrations for your brand.",
+    "Custom website and mobile app development by Alitworld — MVP to scale for startups. Tailored UX, payments, and integrations that convert visitors into customers.",
   path: "/customized",
 });
 
 export default function CustomizedPage() {
+  const faqs = getFaqs();
+
   return (
     <>
       <CustomizedHero />
@@ -25,7 +28,7 @@ export default function CustomizedPage() {
         secondaryHref="/prebuilt"
         secondaryLabel="See Prebuilt Options"
       />
-      <FAQ />
+      <FAQ items={faqs} />
     </>
   );
 }

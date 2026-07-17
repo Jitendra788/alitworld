@@ -215,6 +215,20 @@ export const applicationProjects: Project[] = [
       "Secure payments: UPI, COD, EMI options supported for all users.",
     ],
   },
+  {
+    id: "selenium-automation",
+    title: "Selenium Web Scraping Automation",
+    category: "application",
+    url: "/blogs/selenium-web-scraping-cricket-ecommerce",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&h=560&q=80",
+    ctaLabel: "Read Case Study",
+    highlights: [
+      "Cricket Data & 200+ Ecommerce Sites — one automation stack for sports + retail data.",
+      "Cricket scraping: live scores, fixtures, player stats and match history into structured files.",
+      "Ecommerce at scale: products, prices, stock and variants from 200+ online stores.",
+      "Selenium jobs with retries, scheduled runs, and clean CSV/Excel or API export.",
+    ],
+  },
 ];
 
 export const allProjects = [...websiteProjects, ...applicationProjects];

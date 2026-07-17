@@ -11,12 +11,12 @@ export function CustomizedHero() {
         label="Custom Development"
         title={
           <>
-            Customized Development
+            Custom Website &amp; App Development
             <br />
-            <span className="hero-gradient-text">From Scratch</span>
+            <span className="hero-gradient-text">Built From Scratch</span>
           </>
         }
-        description="We transform your unique ideas into powerful, scalable applications — from the first line of code to the final launch."
+        description="Alitworld builds custom websites and mobile apps — from the first line of code to launch, with optional marketing and SEO."
       >
         <div className="flex flex-wrap justify-center gap-4">
           <Link href="/contact" className="btn-hero-primary">

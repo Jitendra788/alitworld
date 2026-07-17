@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { PageCta } from "@/components/PageCta";
 import { BlogCover } from "@/components/BlogCover";
-import { blogPosts, blogsPageContent } from "@/data/blogs";
+import { getBlogPosts, blogsPageContent } from "@/data/blogs";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -22,14 +22,16 @@ function formatDate(iso: string) {
 }
 
 export default function BlogsPage() {
+  const blogPosts = getBlogPosts();
+
   return (
     <>
       <PageHero
         label="Blog"
         title={
           <>
-            Websites, Apps, Marketing &amp;{" "}
-            <span className="hero-gradient-text">SEO</span>
+            Alitworld Blog — Web Development,{" "}
+            <span className="hero-gradient-text">Marketing &amp; SEO</span>
           </>
         }
         description={blogsPageContent.description}

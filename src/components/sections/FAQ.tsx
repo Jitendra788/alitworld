@@ -15,7 +15,7 @@ import {
   FileCode2,
   Rocket,
 } from "lucide-react";
-import { faqs } from "@/data/site";
+import type { FaqItem } from "@/data/site";
 
 const faqIcons = [
   Globe2,
@@ -30,7 +30,7 @@ const faqIcons = [
   PhoneOff,
 ] as const;
 
-export function FAQ() {
+export function FAQ({ items }: { items: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -46,7 +46,7 @@ export function FAQ() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="mx-auto max-w-3xl text-center text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl lg:text-[2.6rem] lg:leading-tight">
-          Frequently Asked Questions
+          FAQs — Web Development, Apps, Marketing &amp; SEO
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-sm text-white/70 sm:text-base">
           Clear answers about websites, apps, IT services, marketing, and SEO
@@ -56,7 +56,7 @@ export function FAQ() {
         <div className="mt-10 grid items-stretch gap-8 lg:mt-14 lg:grid-cols-[1fr_minmax(280px,0.95fr)] lg:gap-10">
           {/* Left — white cards */}
           <div className="flex flex-col gap-3 sm:gap-4">
-            {faqs.map((faq, index) => {
+            {items.map((faq, index) => {
               const isOpen = openIndex === index;
               const Icon = faqIcons[index % faqIcons.length];
 

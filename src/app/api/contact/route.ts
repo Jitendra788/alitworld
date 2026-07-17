@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { siteConfig } from "@/lib/config";
+import { readJson, writeJson } from "@/lib/admin/store";
 
 type ContactBody = {
   name?: string;
@@ -8,8 +9,32 @@ type ContactBody = {
   message?: string;
 };
 
+type ContactMessage = {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+  createdAt: string;
+};
+
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+async function saveMessage(name: string, email: string, message: string) {
+  try {
+    const messages = await readJson<ContactMessage[]>("messages.json");
+    messages.unshift({
+      id: `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
+      name,
+      email,
+      message,
+      createdAt: new Date().toISOString(),
+    });
+    await writeJson("messages.json", messages);
+  } catch (err) {
+    console.error("[contact:save]", err);
+  }
 }
 
 export async function POST(request: Request) {
@@ -37,6 +62,8 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
+
+  await saveMessage(name, email, message);
 
   const to = process.env.CONTACT_EMAIL ?? siteConfig.email;
   const apiKey = process.env.RESEND_API_KEY;

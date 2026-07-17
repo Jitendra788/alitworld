@@ -13,9 +13,9 @@ import { createPageMetadata } from "@/lib/seo";
 import { Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact Alitworld Technologies | Jaipur IT Company",
+  title: "Get a Quote — Website, App or Marketing | Alitworld",
   description:
-    "Contact Alitworld Technologies in Jaipur for website designing, app development, digital marketing, and SEO. Call, WhatsApp, or send a message.",
+    "Enquire with Alitworld for website development, mobile apps, digital marketing, or SEO. Startups and growing brands — call, WhatsApp, or send a message (Jaipur, India).",
   path: "/contact",
 });
 
@@ -57,17 +57,20 @@ export default function ContactPage() {
         label="Connect"
         title={
           <>
-            Let&apos;s <span className="hero-gradient-text">Talk</span>
+            Contact Alitworld for{" "}
+            <span className="hero-gradient-text">Web &amp; SEO</span>
           </>
         }
-        description="From idea to launch — we design and develop tailor-made websites and apps that scale with your business."
+        description="From idea to launch — we design websites and apps, and help with digital marketing and SEO that scale with your business."
       />
 
       <section className="section section-mesh -mt-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="order-2 text-center lg:order-1 lg:text-left">
-              <h2 className="text-2xl font-bold text-brand sm:text-3xl">Get in touch</h2>
+              <h2 className="text-2xl font-bold text-brand sm:text-3xl">
+                Contact Alitworld Technologies
+              </h2>
               <p className="mt-3 leading-relaxed text-muted">
                 Reach out by phone, email, or the form — we typically respond within one
                 business day.
@@ -119,7 +122,9 @@ export default function ContactPage() {
             </div>
 
             <div className="card-hover order-1 p-5 sm:p-9 lg:order-2">
-              <h2 className="text-xl font-bold text-brand sm:text-2xl">Have a question?</h2>
+              <h2 className="text-xl font-bold text-brand sm:text-2xl">
+                Send a project enquiry
+              </h2>
               <p className="mt-2 text-sm text-muted">
                 Our friendly team is ready to help — send us a message.
               </p>

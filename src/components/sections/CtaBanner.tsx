@@ -3,8 +3,8 @@ import { PageCta } from "@/components/PageCta";
 export function CtaBanner() {
   return (
     <PageCta
-      title="Ready to build your next big idea?"
-      description="From MVP to enterprise — scalable web, mobile, and SaaS solutions tailored for your business."
+      title="Ready to build, launch, and rank?"
+      description="Website, app, or marketing — Alitworld helps startups go live and get enquiries. Tell us your idea."
       secondaryHref="/prebuilt"
       secondaryLabel="View Prebuilt Solutions"
     />

@@ -1,3 +1,6 @@
+import { readFileSync } from "fs";
+import path from "path";
+
 export const blogsPageContent = {
   description:
     "Alitworld builds websites and mobile apps, and helps brands grow with digital marketing and SEO ranking — practical guides from our Jaipur team.",
@@ -14,111 +17,18 @@ export type BlogPost = {
   content: string[];
 };
 
-export const blogPosts: BlogPost[] = [
-  {
-    slug: "website-design-that-converts",
-    title: "Website Designing That Converts Visitors into Leads",
-    excerpt:
-      "How Alitworld designs business websites — clear layout, mobile-first UX, and CTAs that get enquiries.",
-    date: "2026-07-10",
-    category: "Website Design",
-    readTime: "5 min",
-    image: "/hero-a.jpg",
-    content: [
-      "A website is not only about looking premium. For most businesses it is the first sales meeting — visitors decide in seconds whether they trust you and what to do next.",
-      "At Alitworld we design websites around conversion: strong headline, service clarity, proof (projects/reviews), and easy contact via form, call, or WhatsApp. Fancy animation without a clear CTA rarely helps.",
-      "Mobile-first is non-negotiable. Most Indian buyers browse on phones. Large tap targets, fast load, and readable type matter more than heavy effects.",
-      "Good website design also supports SEO — clean structure, proper headings, fast pages, and content sections that answer real search questions.",
-      "Whether you need a company site, portfolio, or ecommerce storefront, we start with your offer and audience, then design screens that support that goal.",
-    ],
-  },
-  {
-    slug: "mobile-app-development-android-ios",
-    title: "We Build Apps for Android and iOS",
-    excerpt:
-      "Flutter and modern app stacks for food delivery, ecommerce, booking, and business ops — from idea to Play Store.",
-    date: "2026-07-02",
-    category: "App Development",
-    readTime: "6 min",
-    image: "/hero-c.jpg",
-    content: [
-      "Alitworld builds mobile apps for businesses that need more than a website — repeat orders, vendor dashboards, delivery tracking, or staff tools in the pocket.",
-      "We often use Flutter so Android and iOS ship from one codebase. That saves budget while still feeling native on both stores.",
-      "Typical builds include customer app, admin panel, payments, notifications, and WhatsApp-friendly support flows. Local brands especially need simple ops screens that staff can use without training.",
-      "Prebuilt app products help you launch faster when your model is proven (grocery, food, single/multivendor). Custom apps fit unique workflows and deeper integrations.",
-      "After delivery you get source code and deployment guidance. Optional maintenance keeps the app updated as OS and payment rules change.",
-    ],
-  },
-  {
-    slug: "full-service-it-company-jaipur",
-    title: "What a Full-Service IT Company Should Deliver",
-    excerpt:
-      "Websites, apps, admin panels, hosting go-live, and support — how Alitworld works as your tech partner.",
-    date: "2026-06-20",
-    category: "IT Company",
-    readTime: "5 min",
-    image: "/hero-b.jpg",
-    content: [
-      "Hiring an IT company should feel like adding a product team — not buying a one-time PDF of mockups. You need discovery, build, testing, launch, and someone to call when something breaks.",
-      "Alitworld covers website designing, custom and prebuilt apps, admin panels, and deployment. We clarify scope early so timelines stay honest.",
-      "Serious partners document ownership: source code after payment, credentials, and who handles bugs for the first 30–90 days.",
-      "We sit with founders in Jaipur and remote clients across India. Local workshops help map real workflows before a single screen is coded.",
-      "If you are comparing freelancers vs an IT company, ask about milestones, demos, and post-launch support. Those answers separate a vendor from a long-term partner.",
-    ],
-  },
-  {
-    slug: "digital-marketing-for-your-website-and-app",
-    title: "Digital Marketing for Your Website and App",
-    excerpt:
-      "Ads, social, and content that send traffic to the product we build — so marketing and IT work as one system.",
-    date: "2026-06-05",
-    category: "Marketing",
-    readTime: "5 min",
-    image: "/hero-d.jpg",
-    content: [
-      "Building a website or app is half the job. Marketing fills the funnel so customers actually find and use it.",
-      "Alitworld helps brands connect product and promotion: landing pages that match ad promises, WhatsApp CTAs, and tracking so you know which channel creates leads.",
-      "Social media works when every post has a next step — call, form, catalog, or app install. LinkedIn suits IT and B2B; Instagram suits retail and local offers.",
-      "Paid campaigns only pay off when the site/app is fast and clear. We fix conversion leaks before scaling ad spend.",
-      "Think of IT + marketing as one growth stack. Separate vendors often blame each other; one aligned team moves ranking and revenue together.",
-    ],
-  },
-  {
-    slug: "seo-ranking-for-websites",
-    title: "SEO Ranking: Get Your Website Found on Google",
-    excerpt:
-      "On-page SEO, local ranking, and content habits that help Alitworld clients climb search results.",
-    date: "2026-05-22",
-    category: "SEO & Ranking",
-    readTime: "6 min",
-    image: "/hero-business.jpg",
-    content: [
-      "SEO ranking means your website appears when buyers search for your service and city. Without it, even a beautiful design stays invisible.",
-      "We set foundations during website design: title tags, headings, mobile speed, internal links, and pages for each key service. That is cheaper than fixing SEO after a messy launch.",
-      "Local SEO matters for Jaipur and India-first brands — Google Business Profile, consistent address/phone, and reviews. Ranking #1 for “near me” queries often beats national vanity keywords.",
-      "Content that ranks answers real questions: pricing ranges, process steps, FAQs, and case-style stories. Publish regularly; one blog is not a strategy.",
-      "Pair SEO with a conversion-ready site. Traffic without enquiries wastes the ranking. Alitworld builds for both findability and forms that get filled.",
-    ],
-  },
-  {
-    slug: "from-idea-to-live-product",
-    title: "From Idea to Live Product: Website, App, Then Growth",
-    excerpt:
-      "Our usual path — design & build first, then SEO and marketing — so you launch with a plan, not guesswork.",
-    date: "2026-05-08",
-    category: "Growth",
-    readTime: "5 min",
-    image: "/hero-e.jpg",
-    content: [
-      "Most founders want everything at once: website, app, ads, and #1 ranking. The smart order saves money.",
-      "Step one: lock the offer and design the website (and app if needed). Step two: go live with tracking and WhatsApp/contact flows. Step three: SEO foundation. Step four: paid and social experiments.",
-      "Alitworld guides that sequence. Prebuilt products accelerate step one when your model fits; custom work covers unique needs.",
-      "After launch we review what creates leads — organic, ads, or referrals — and double down. Growth is a weekly habit, not a one-time campaign.",
-      "Ready to start? Share your idea on the contact page. We will recommend website design, app build, marketing, or SEO based on your timeline and budget.",
-    ],
-  },
-];
+const blogsPath = path.join(process.cwd(), "src", "data", "cms", "blogs.json");
 
-export function getBlogPost(slug: string) {
-  return blogPosts.find((post) => post.slug === slug);
+/** fs load — avoids Turbopack HMR bugs on static JSON imports. Newest first. */
+export function getBlogPosts(): BlogPost[] {
+  const posts = JSON.parse(readFileSync(blogsPath, "utf8")) as BlogPost[];
+  return posts.sort((a, b) => {
+    const byDate = Date.parse(b.date) - Date.parse(a.date);
+    if (byDate !== 0) return byDate;
+    return a.slug.localeCompare(b.slug);
+  });
+}
+
+export function getBlogPost(slug: string): BlogPost | undefined {
+  return getBlogPosts().find((post) => post.slug === slug);
 }

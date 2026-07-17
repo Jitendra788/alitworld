@@ -5,11 +5,14 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { FAQ } from "@/components/sections/FAQ";
 import { PrebuiltShowcase } from "@/components/sections/PrebuiltShowcase";
+import { getFaqs } from "@/data/cms-loaders";
 import { prebuiltBenefits, prebuiltPageContent } from "@/data/prebuilt";
 
 const benefitIcons = [Rocket, Clock, Code2, Shield] as const;
 
 export function PrebuiltContent() {
+  const faqs = getFaqs();
+
   return (
     <>
       <PageHero
@@ -18,7 +21,7 @@ export function PrebuiltContent() {
           <>
             <span className="hero-gradient-text">Prebuilt SaaS</span>
             <br />
-            Software for Startups
+            Apps &amp; Websites for Startups
           </>
         }
         description={prebuiltPageContent.tagline}
@@ -89,7 +92,7 @@ export function PrebuiltContent() {
         primaryLabel="Request a Quote"
       />
 
-      <FAQ />
+      <FAQ items={faqs} />
     </>
   );
 }
