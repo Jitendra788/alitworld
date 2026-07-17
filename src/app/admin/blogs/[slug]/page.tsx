@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import type { BlogPost } from "@/data/blogs";
@@ -41,9 +42,9 @@ export default function EditBlogPage() {
     return (
       <div className="p-8">
         <p className="text-sm text-red-600">{error || "Blog not found"}</p>
-        <a href="/admin/blogs" className="mt-4 inline-block text-sm text-[#0f3d2e]">
+        <Link href="/admin/blogs" className="mt-4 inline-block text-sm text-[#0f3d2e]">
           ← Back to blogs
-        </a>
+        </Link>
       </div>
     );
   }

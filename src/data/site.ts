@@ -37,10 +37,6 @@ export const features = [
   },
 ] as const;
 
-function teamPhoto(name: string) {
-  return `https://i.pravatar.cc/400?u=${encodeURIComponent(name)}`;
-}
-
 export const team = [
   {
     name: "Yogesh Garg",
