@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   creator: siteConfig.name,
   publisher: siteConfig.name,
   category: "technology",
+  verification: {
+    google:
+      process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ??
+      "RsMDVY7NM8OBW-aQ3NuFYFNfjogRvrrDt5CUtLJ9jjM",
+  },
   robots: {
     index: true,
     follow: true,
