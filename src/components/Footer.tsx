@@ -13,8 +13,8 @@ export function Footer() {
           <div className="lg:col-span-5">
             <Logo variant="footer" theme="light" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
-              Turning visions into digital reality — custom development and
-              prebuilt SaaS solutions for modern businesses across India.
+              Alitworld Technologies — web development, website designing, mobile
+              apps, digital marketing, and SEO for businesses across India.
             </p>
             <SocialLinks className="mt-6 [&_a]:text-white/60 [&_a:hover]:bg-white/10 [&_a:hover]:text-white" />
           </div>

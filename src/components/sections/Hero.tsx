@@ -30,15 +30,14 @@ export function Hero() {
           </p>
 
           <h1 className="text-[1.75rem] font-bold leading-[1.12] tracking-tight min-[400px]:text-[2rem] sm:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
-            <span className="hero-gradient-text">Turning Visions</span>
+            <span className="hero-gradient-text">Alitworld</span>
             <br />
-            <span className="text-white">Into Digital Reality</span>
+            <span className="text-white">Web Development, Marketing &amp; SEO</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-base sm:leading-relaxed lg:text-lg lg:mx-0">
-            Alitworld Technologies builds websites, mobile apps, and SaaS
-            products — plus digital marketing and SEO — for businesses across
-            India.
+            Alitworld Technologies builds websites and mobile apps, and helps
+            brands grow with digital marketing and SEO ranking across India.
           </p>
 
           <div className="mx-auto mt-8 flex w-full max-w-sm flex-col items-center gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:items-stretch sm:justify-center lg:mx-0 lg:items-stretch lg:justify-start">
