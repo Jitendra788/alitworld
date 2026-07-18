@@ -190,16 +190,16 @@ export function BlogEditor({
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8">
       <div className="mb-6">
         <Link href="/admin/blogs" className="text-sm text-zinc-500 hover:text-zinc-800">
           ← Back to blogs
         </Link>
-        <h1 className="mt-2 text-2xl font-semibold text-zinc-900">{title}</h1>
+        <h1 className="mt-2 text-xl font-semibold text-zinc-900 sm:text-2xl">{title}</h1>
       </div>
       <form
         onSubmit={onSubmit}
-        className="max-w-3xl space-y-6 rounded-xl border border-zinc-200 bg-white p-6"
+        className="max-w-3xl space-y-6 rounded-xl border border-zinc-200 bg-white p-4 sm:p-6"
       >
         <BlogFormFields
           form={form}

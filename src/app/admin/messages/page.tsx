@@ -49,8 +49,8 @@ export default function AdminMessagesPage() {
   }
 
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-semibold text-zinc-900">Messages</h1>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <h1 className="text-xl font-semibold text-zinc-900 sm:text-2xl">Messages</h1>
       <p className="mt-1 text-sm text-zinc-500">
         Contact form submissions from the website.
       </p>
@@ -66,7 +66,7 @@ export default function AdminMessagesPage() {
           {messages.map((msg) => (
             <li
               key={msg.id}
-              className="rounded-xl border border-zinc-200 bg-white p-5"
+              className="rounded-xl border border-zinc-200 bg-white p-4 sm:p-5"
             >
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>

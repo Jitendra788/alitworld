@@ -37,7 +37,7 @@ function LoginForm() {
   }
 
   return (
-    <div className="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-900 p-8 shadow-xl">
+    <div className="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-900 p-6 shadow-xl sm:p-8">
       <p className="text-xs font-medium uppercase tracking-wider text-zinc-500">
         Alitworld
       </p>

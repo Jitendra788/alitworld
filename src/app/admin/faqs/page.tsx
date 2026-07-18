@@ -77,10 +77,10 @@ export default function AdminFaqsPage() {
   }
 
   return (
-    <div className="p-8">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-semibold text-zinc-900">FAQs</h1>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
+        <div className="min-w-0">
+          <h1 className="text-xl font-semibold text-zinc-900 sm:text-2xl">FAQs</h1>
           <p className="mt-1 text-sm text-zinc-500">
             Add, edit, or remove frequently asked questions.
           </p>
@@ -104,7 +104,7 @@ export default function AdminFaqsPage() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-xl border border-zinc-200 bg-white p-5"
+              className="rounded-xl border border-zinc-200 bg-white p-4 sm:p-5"
             >
               <div className="mb-3 flex items-center justify-between">
                 <p className="text-sm font-medium text-zinc-500">

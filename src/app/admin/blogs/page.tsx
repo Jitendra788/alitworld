@@ -44,10 +44,10 @@ export default function AdminBlogsPage() {
   }
 
   return (
-    <div className="p-8">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-semibold text-zinc-900">Blogs</h1>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
+        <div className="min-w-0">
+          <h1 className="text-xl font-semibold text-zinc-900 sm:text-2xl">Blogs</h1>
           <p className="mt-1 text-sm text-zinc-500">
             Create and edit blog posts.
           </p>

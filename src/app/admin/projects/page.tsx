@@ -107,10 +107,10 @@ export default function AdminProjectsPage() {
   }
 
   return (
-    <div className="p-8">
-      <div className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-semibold text-zinc-900">Our Projects</h1>
+    <div className="p-4 sm:p-6 lg:p-8">
+      <div className="flex flex-wrap items-end justify-between gap-3 sm:gap-4">
+        <div className="min-w-0">
+          <h1 className="text-xl font-semibold text-zinc-900 sm:text-2xl">Our Projects</h1>
           <p className="mt-1 text-sm text-zinc-500">
             Manage portfolio cards shown on the homepage.
           </p>
@@ -134,7 +134,7 @@ export default function AdminProjectsPage() {
           {projects.map((project, index) => (
             <div
               key={`${project.id}-${index}`}
-              className="rounded-xl border border-zinc-200 bg-white p-5 shadow-sm"
+              className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm sm:p-5"
             >
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <p className="text-sm font-semibold text-zinc-700">
